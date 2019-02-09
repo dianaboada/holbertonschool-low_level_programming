@@ -3,13 +3,15 @@
 #include <time.h>
 /**
 * main - Entry point
-* Source code to print the last digit of the number stored in the variable n
+* function_name - for initialize in a, condition and update until z
+* Description: c parameter to print the alphabet from a to z in lowercase
+* section header: int
 * Return: Always 0 (Success)
 */
 int main(void)
 {
 	int c;
-	
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 	putchar(c);
