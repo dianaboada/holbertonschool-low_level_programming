@@ -4,8 +4,8 @@
 /**
 * main - Entry point
 * function_name - for initialize 48-57 ASCII with a 44coma and 32space after, 
-* condition and update 8f, print combination
-* Description: a parameter to print alphabet in reverse
+* condition and update 8f
+* Description: print combination with man ASCII
 * section header: int
 * Return: Always 0 (Success)
 */
