@@ -15,7 +15,7 @@ int main(void)
 		{
 		putchar(n);
 		putchar(o);
-	if (n + o < 144)
+	if (n + o < 114)
 	{
 		putchar(44);
 		putchar(32);
@@ -24,5 +24,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-
 }
