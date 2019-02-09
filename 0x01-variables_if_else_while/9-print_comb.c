@@ -2,13 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - Entry point
-* function_name - for initialize 48-57 ASCII with a 44coma and 32space after, 
-* condition and update 8f
-* Description: print combination with man ASCII
-* section header: int
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Description: print combination with man ASCII
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int c = 44;
@@ -18,14 +17,14 @@ int main(void)
 	for (n = 48 ; n <= 57; n++)
 	{
 		putchar(n);
-	if (n <= 56)
-		putchar(c);
-	if (n <= 56)
-		putchar(s);
+		if (n <= 56)
+		{
+			putchar(c);
+			putchar(s);
+		}
 	}
 
 	putchar('\n');
 	return (0);
 
 }
-
