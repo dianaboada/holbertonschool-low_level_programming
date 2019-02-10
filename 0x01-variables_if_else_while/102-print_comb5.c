@@ -19,7 +19,7 @@ int main(void)
 				{
 					if (decena1 + unidad1 > decena2 + unidad2)
 						continue;
-					if (decena1 + unidad1 == decena2 + unidad2)
+					if (decena1 == decena2 && unidad1 == unidad2)
 						continue;
 
 					putchar(decena1);
