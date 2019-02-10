@@ -27,7 +27,7 @@ int main(void)
 					putchar(32);
 					putchar(decena2);
 					putchar(unidad2);
-					if (decena1 + unidad1 + 32 + decena2 + unidad2 < 259)
+					if (!(decena1 == 57 && unidad1 == 56 && decena2 == 57 && unidad2 == 57))
 					{
 						putchar(44);
 						putchar(32);
