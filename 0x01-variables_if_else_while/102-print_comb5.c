@@ -17,11 +17,11 @@ int main(void)
 			{
 				for (unidad2 = 48 ; unidad2 <= 57 ; unidad2++)
 				{
-					if (decena1 + unidad1 > decena2 + unidad2)
-						continue;
-					if (decena1 == decena2 && unidad1 == unidad2)
-						continue;
+					int numero1 = (decena1 - 48) * 10 + (unidad1 - 48);
+					int numero2 = (decena2 - 48) * 10 + (unidad2 - 48);
 
+					if (numero1 >= numero2)
+						continue;
 					putchar(decena1);
 					putchar(unidad1);
 					putchar(32);
