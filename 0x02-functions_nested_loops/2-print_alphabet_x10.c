@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* print_alphabetx10 - check the code for Holberton School students.
+* print_alphabet_x10 - check the code for Holberton School students.
 *
 * Return: Always 0.
 */
@@ -10,7 +10,7 @@ void print_alphabet_x10(void)
 	int alphabetx10;
 	int tentimes = 1;
 
-	while (tentimes < 10)
+	while (tentimes <= 10)
 	{
 		tentimes++;
 
