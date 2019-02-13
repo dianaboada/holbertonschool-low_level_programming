@@ -3,9 +3,6 @@
 /**
 * jack_bauer - check the code for Holberton School students.
 *
-* @min: prints every minute of the day.
-* @hr: prints every hour of the day.
-*
 * Return: Always 0.
 */
 void jack_bauer(void)
