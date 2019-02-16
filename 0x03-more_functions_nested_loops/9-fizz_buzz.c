@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* Fizz-Buzz - A function that prints numbers from 1 to 100 with Fizz-Buzz
+* main - A function that prints numbers from 1 to 100 with Fizz-Buzz
 *
 * Return: int.
 */
