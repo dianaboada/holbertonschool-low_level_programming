@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
-* Fizz-Buzz - A function that prints numbers from 1 to 100
-* replacing mutiple of 3 with Fizz and multiple of 5 with Buzz.
+* Fizz-Buzz - A function that prints numbers from 1 to 100 with Fizz-Buzz
 *
 * Return: int.
 */
