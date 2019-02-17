@@ -8,16 +8,16 @@
 */
 void print_diagonal(int n)
 {
-	int diagonal;
-	int spaces;
+	int rows;
+	int columns;
 
 	if (n <= 0)
 	{
 		_putchar('\n');
 	}
-	for (diagonal = 1 ; diagonal <= n ; diagonal++)
+	for (rows = 1 ; rows <= n ; rows++)
 	{
-		for (spaces = 0 ; spaces < diagonal - 1 ; spaces++)
+		for (columns = 0 ; columns < rows - 1 ; columns++)
 		{
 			_putchar(' ');
 		}
