@@ -9,13 +9,18 @@
 */
 void print_number(int n)
 {
+	int decimal;
+	int times_digit;
+	int expo;
+	int i;
+
 	if (n < 0)
 	{
 		n = n * -1;
 		_putchar('-');
 	}
-	int decimal = n;
-	int times_digit = 0;
+	decimal = n;
+	times_digit = 0;
 
 	while (decimal / 10 > 0)
 	{
@@ -23,8 +28,7 @@ void print_number(int n)
 		decimal = decimal / 10;
 	}
 
-	int expo = (int)pow(10, times_digit);
-	int i;
+	expo = (int)pow(10, times_digit);
 
 	for (i = 0; i <= times_digit; i++)
 	{
