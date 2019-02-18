@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <math.h>
 
 /**
 * print_number - A function that prints an integer.
@@ -13,6 +12,7 @@ void print_number(int n)
 	int times_digit;
 	int expo;
 	int i;
+	int e;
 
 	if (n < 0)
 	{
@@ -28,7 +28,11 @@ void print_number(int n)
 		decimal = decimal / 10;
 	}
 
-	expo = (int)pow(10, times_digit);
+	expo = 1;
+	for (e = 0 ; e < times_digit ; e++)
+	{
+		expo = expo * 10;
+	}
 
 	for (i = 0; i <= times_digit; i++)
 	{
