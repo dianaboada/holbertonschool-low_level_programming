@@ -19,7 +19,7 @@ void print_number(int n)
 		n = n * -1;
 		if (n == -2147483648)
 		{
-			n = 2147483648
+			n = 2147483648;
 		}
 		_putchar('-');
 	}
