@@ -2,7 +2,7 @@
 
 /**
 * reset_to_98 - a function that takes a *ip as parameter an reset it with 98.
-* @*n: Parameters.
+* @n: Parameters.
 *
 * Return: Void.
 */
