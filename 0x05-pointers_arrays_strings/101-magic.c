@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - function one line of code to return 98.
+ *
+ * Return: 0.
+ */
 int main(void)
 {
 	int n;
