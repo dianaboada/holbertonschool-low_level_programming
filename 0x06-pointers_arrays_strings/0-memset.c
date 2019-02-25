@@ -2,9 +2,9 @@
 
 /**
 * *_memset - function that fills memory with a constant byte.
-* @s: character.
-* @b: character.
-* @n: integer.
+* @s: Array.
+* @b: cons to add.
+* @n: times to add the cons.
 *
 * Return: 0.
 */
@@ -17,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		*s = b;
 		s++;
 	}
-	return(s);
+	return (s);
 }
