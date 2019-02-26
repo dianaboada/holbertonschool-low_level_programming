@@ -28,5 +28,8 @@ char *_strpbrk(char *s, char *accept)
 		if (flag == 1)
 			break;
 	}
-	return (&s[index_equal]);
+	if (flag != 1)
+		return('\0');
+	else
+		return (&s[index_equal]);
 }
