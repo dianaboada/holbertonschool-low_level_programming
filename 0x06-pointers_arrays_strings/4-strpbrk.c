@@ -5,7 +5,7 @@
 * @s: string.
 * @accept: substring.
 *
-* Return: unsigned int.
+* Return: char.
 */
 char *_strpbrk(char *s, char *accept)
 {
@@ -20,7 +20,7 @@ char *_strpbrk(char *s, char *accept)
 			if (s[index_s] == accept[index_accept])
 			{
 				index_equal = index_s;
-				index_s = 20;
+				index_s = 99;
 				break;
 			}
 		}
