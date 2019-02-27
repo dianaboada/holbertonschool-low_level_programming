@@ -17,7 +17,7 @@ char *_strstr(char *haystack, char *needle)
 
 	for (i_needle = 0; needle[i_needle] != '\0'; i_needle++)
 	{
-		for (i_haystack = 0; haystack[i_haystack] != '\0'; i_haystack++)
+		for (; haystack[i_haystack] != '\0'; i_haystack++)
 		{
 			if (needle[i_needle] == haystack[i_haystack])
 			{
@@ -29,11 +29,16 @@ char *_strstr(char *haystack, char *needle)
 				}
 				break;
 			}
+			else
+			{
+				flag1 = 0;
+				i_needle = 0;
+			}
 		}
 		if (flag == 1)
 			continue;
 		else
 			return ('\0');
-	}
+		}
 	return (&haystack[i_final]);
 }
