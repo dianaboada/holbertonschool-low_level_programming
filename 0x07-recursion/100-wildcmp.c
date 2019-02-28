@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
-* wildcmp - Function that prints a string in reverse.
-* @s1: String.
+* wildcmp - Function that compares two strings.
+* @s1: String1.
 * @s2: Strin2 that contains '*'.
 *
 * Return: int.
