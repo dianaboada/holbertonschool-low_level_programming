@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int counter;
+	int counter1;
 	int numero;
 
 	if (argc == 1)
@@ -21,24 +22,19 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	else
+	for (counter = 1; counter < argc; counter++)
 	{
-		for (counter = 1; counter < argc; counter++)
+		for (counter1 = 0; argv[counter][counter1]; counter1++)
 		{
-			if (isdigit(argv[counter][0]) == 0)
+			if (isdigit(argv[counter][counter1]) == 0)
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else
-			{
-				numero = atoi(argv[counter]);
-				sum = sum + numero;
-			}
 		}
-
-		printf("%d\n", sum);
+		numero = atoi(argv[counter]);
+		sum = sum + numero;
 	}
+	printf("%d\n", sum);
 	return (0);
 }
-
