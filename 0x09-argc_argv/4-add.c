@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		for (counter = 1; counter < argc; counter++)
 		{
 			numero = atoi(argv[counter]);
-			if (numero == 0)
+			if (numero <= 0)
 			{
 				printf("Error\n");
 				return (1);
