@@ -14,6 +14,10 @@ char *_strdup(char *str)
 	char *cpy_array;
 	int index;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	for (size = 0; str[size] != '\0' ; size++)
 	{
 
