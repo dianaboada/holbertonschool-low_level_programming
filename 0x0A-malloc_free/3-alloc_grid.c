@@ -3,10 +3,11 @@
 #include <stdlib.h>
 
 /**
-* *_strdup - Function returns a pointer to a new string.
-* @str: string.
+* **alloc_grid - Function that returns a pointer to a matrix array of integers.
+* @width: rows.
+* @height: columns.
 *
-* Return: array.
+* Return: int.
 */
 int **alloc_grid(int width, int height)
 {
@@ -14,7 +15,7 @@ int **alloc_grid(int width, int height)
 	int rows;
 	int columns;
 
-	if ( width <= 0)
+	if (width <= 0)
 	{
 		return (NULL);
 	}
@@ -27,7 +28,7 @@ int **alloc_grid(int width, int height)
 	{
 		for (columns = 0; columns < width; columns++)
 		{
-			pointer_matrix[rows][columns] = 0; 
+			pointer_matrix[rows][columns] = 0;
 		}
 	}
 	return (pointer_matrix);
