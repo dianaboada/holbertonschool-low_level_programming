@@ -12,7 +12,7 @@ int longitud(char *size)
 {
 	int i;
 
-	for (size = 0; size[i] != '\0'; i++)
+	for (i = 0; size[i] != '\0'; i++)
 	{
 	}
 	return (i);
@@ -20,37 +20,42 @@ int longitud(char *size)
 
 /**
 * string_nconcat - Function that concatenates two strings.
-* @*s1: String1.
-* @*s2: String2 conditioned by n.
+* @s1: String1.
+* @s2: String2 conditioned by n.
 * @n: variable size of s2.
 *
 * Return: char.
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int source;
-	unsigned int dest;
+	unsigned int long_source;
+	unsigned int long_dest;
 	char *pointer;
 	unsigned int index;
 
-	source = longitud(s1);
-	dest = longitud(s2);
-	if (n >= dest)
+	long_source = longitud(s1);
+	long_dest = longitud(s2);
+	if (n >= long_dest)
 	{
-		n = dest;
+		n = long_dest;
 	}
-	pointer = malloc(sizeof(char) * (source + n + 1));
+	pointer = malloc(sizeof(char) * (long_source + n + 1));
 	if (pointer == NULL)
 	{
+		free(pointer);
 		return (NULL);
 	}
-	for (index = 0; index < source; index++)
+	for (index = 0; index < long_source + n; index++)
 	{
-		pointer[index] = s1[index];
+		if (index < long_source)
+		{
+			pointer[index] = s1[index];
+		}
+		else
+		{
+			pointer[index] = s2[index - long_source];
+		}
 	}
-	for (; index <= source + n + 1; index++)
-	{
-		pointer[index] = s2[index - source];
-	}
+	pointer[index] = '\0';
 	return (pointer);
 }
