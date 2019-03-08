@@ -2,7 +2,7 @@
 
 /**
 * longitud - Function that returns the size of string.
-* @*size: iterator in the size..
+* @size: iterator in the size.
 *
 * Return: int.
 */
