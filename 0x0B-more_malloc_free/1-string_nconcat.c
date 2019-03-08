@@ -1,12 +1,10 @@
 #include "holberton.h"
 
 /**
-* string_nconcat - Function that concatenates two strings.
-* @*s1: String1.
-* @*s2: String2 conditioned by n.
-* @n: variable size of s2.
+* longitud - Function that returns the size of string.
+* @*size: iterator in the size..
 *
-* Return: char.
+* Return: int.
 */
 
 
@@ -34,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int dest;
 	char *pointer;
 	unsigned int index;
-	
+
 	source = longitud(s1);
 	dest = longitud(s2);
 	if (n >= dest)
