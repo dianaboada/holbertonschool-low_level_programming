@@ -37,12 +37,12 @@ char *_strdup(char *str)
 
 
 /**
- * print_dog - Function that creates a new dog with a copy of name and owner.
- * @name: Dog's name.
+* new_dog - Function that creates a new dog.
+* @name: Dog's name.
  * @age: Dog's age.
  * @owner: Dog's owner.
  *
- * Return: dog_t - Runo_perruno.
+ * Return: new dog or NULL when fails.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -50,13 +50,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	Runo_perruno = malloc(sizeof(dog_t));
 	if (Runo_perruno == NULL)
+	{
 		return (NULL);
+	}
 	if (name)
 	{
 		Runo_perruno->name = _strdup(name);
-	if (Runo_perruno->name == NULL)
-		free(Runo_perruno);
+		if (Runo_perruno->name == NULL)
+			free(Runo_perruno);
 	}
+	
+	
 	Runo_perruno->age = age;
 
 	if (owner)
