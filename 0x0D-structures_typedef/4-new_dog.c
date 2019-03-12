@@ -4,11 +4,12 @@
 #include "dog.h"
 
 /**
-  * *_strdup - Function returns a pointer to a new string.
-  * @str: string.
-  *
-  * Return: array.
-  */
+* *_strdup - Function that cpy_array.
+* @str: entry string.
+*
+* Return: On success 1.
+* On error, -1 is returned, and errno is set appropriately.
+*/
 char *_strdup(char *str)
 {
 	int size;
@@ -39,11 +40,11 @@ char *_strdup(char *str)
 /**
 * new_dog - Function that creates a new dog.
 * @name: Dog's name.
- * @age: Dog's age.
- * @owner: Dog's owner.
- *
- * Return: new dog or NULL when fails.
- */
+* @age: Dog's age.
+* @owner: Dog's owner.
+*
+* Return: new dog or NULL when fails.
+*/
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *Runo_perruno;
