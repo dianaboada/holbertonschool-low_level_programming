@@ -5,6 +5,8 @@
 
 /**
 * main - check the code.
+* @argc: variable int.
+* @argv: variable.
 *
 * Return: Always 0.
 */

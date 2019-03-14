@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* get_op_func - Function that selects the correct function to perform the operation.
+* get_op_func - Function that selects the correct function to do the operation.
 * @s: The operator.
 * Return: int, the rigth fuction.
 */
