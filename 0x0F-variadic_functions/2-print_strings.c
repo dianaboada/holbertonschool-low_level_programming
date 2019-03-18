@@ -4,8 +4,8 @@
 
 /**
  * print_strings - Function that prints strings, followed by a new line.
- * separator: string to be printed between the strings.
- * n: number of strings passed to the function.
+ * @separator: string to be printed between the strings.
+ * @n: number of strings passed to the function.
  *
  * Return: Void
  */
